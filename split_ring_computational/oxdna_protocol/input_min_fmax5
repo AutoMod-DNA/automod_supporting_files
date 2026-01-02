@@ -1,0 +1,32 @@
+
+backend = CPU
+steps = 2000
+
+sim_type = min
+
+dt = 0.001
+verlet_skin = 0.15
+
+T = 303K
+
+interaction_type = DNA2
+max_backbone_force = 5.
+
+salt_concentration = 0.5
+
+topology = topology.top
+conf_file = configuration.dat
+
+trajectory_file = trajectory_min_fmax5.dat
+print_conf_interval = 1000
+
+energy_file = energy_min_fmax5.dat
+print_energy_every = 1000
+no_stdout_energy = false
+time_scale = linear
+
+restart_step_counter = 1
+refresh_vel = 1
+
+lastconf_file = start_relax_fmax5.conf
+
